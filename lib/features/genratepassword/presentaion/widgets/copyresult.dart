@@ -45,7 +45,7 @@ class _CopyresultState extends State<Copyresult> {
                 ),
               ),
               onTap: () {
-                Clipboard.setData(ClipboardData(text: "$values.password"));
+                Clipboard.setData(ClipboardData(text: values.password));
                 setState(() {
                   bordercolor = primarycolor;
                   copyvis = true;
