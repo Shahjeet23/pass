@@ -34,7 +34,7 @@ class _PasswordlengthState extends State<Passwordlength> {
                   child: Slider(
                     value: values.passwordLenght.toDouble(),
                     min: 6,
-                    max: 32,
+                    max: values.isUppercase || values.isLowercase ? 32 : 10,
                     onChanged: (value) => (values.changePasswordLength(value)),
                   ),
                 ),
